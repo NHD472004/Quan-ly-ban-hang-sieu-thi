@@ -1,0 +1,13 @@
+SP1,sua,100,7000
+SP9,bim bim,100,5000
+SP2,mi tom,100,5000
+SP8,kem,100,35000
+SP3,gao,100,100000
+SP7,cha vien,100,60000
+SP4,rau cu,100,20000
+SP6,nuoc giat,100,120000
+SP5,nuoc ngot,100,15000
+SP20,trung,100,3500
+SP11,sua chua,100,10000
+SP19,banh,100,20000
+SP12,keo,100,15000
