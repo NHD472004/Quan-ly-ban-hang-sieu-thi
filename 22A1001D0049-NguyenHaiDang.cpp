@@ -885,231 +885,231 @@ void xoaBoNho(NodeSP*& dsSanPham, NodeHD*& dsHoaDon){
 }
 
 
-// int main(){
-//     NodeSP* dsSanPham = NULL;
-//     NodeHD* dsHoaDon = NULL;
-//     int luaChon;
+int main(){
+    NodeSP* dsSanPham = NULL;
+    NodeHD* dsHoaDon = NULL;
+    int luaChon;
     
-//     while(true){
-//         mainMenuTable();
-//         cout << endl;
-//         cout << "Nhap lua chon: ";
-//         cin >> luaChon;
+    while(true){
+        mainMenuTable();
+        cout << endl;
+        cout << "Nhap lua chon: ";
+        cin >> luaChon;
 
-//         switch(luaChon){
-//             case 1:
-//                 nhapDSSP(dsSanPham);
-//                 cout << "Nhap danh sach thanh cong!" << endl;
-//                 break;
-//             case 2:
-//                 inDSSP(dsSanPham);
-//                 cout << endl;
-//                 break;
-//             case 3:
-//                 nhapDSHD(dsHoaDon, dsSanPham);
-//                 cout << "Nhap danh sach thanh cong!" << endl;
-//                 break;
-//             case 4:
-//                 inDSHD(dsHoaDon);
-//                 cout << endl;
-//                 break;
-//             case 5: {
-//                 cout << endl;
-//                 int subSP;
-//                 subMenuSP();
-//                 cout << endl;
-//                 cout << "Nhap lua chon: ";
-//                 cin >> subSP;
-//                 switch(subSP){
-//                     case 1:
-//                         luuFileSanPham(dsSanPham, "SanPham.txt");
-//                         break;
-//                     case 2:
-//                         docFileSanPham(dsSanPham, "SanPham.txt");
-//                         break;
-//                     case 0:
-//                         break;
-//                 }
-//                 cout << endl;
-//                 break;
-//             }
-//             case 6: {
-//                 cout << endl;
-//                 int subHD;
-//                 subMenuHD();
-//                 cout << endl;
-//                 cout << "Nhap lua chon: ";
-//                 cin >> subHD;
-//                 switch(subHD){
-//                     case 1:
-//                         luuFileHoaDon(dsHoaDon, "HoaDon.txt");
-//                         break;
-//                     case 2:
-//                         docFileHoaDon(dsHoaDon, dsSanPham, "HoaDon.txt");
-//                         break;
-//                     case 0:
-//                         break;
-//                 }
-//                 cout << endl;
-//                 break;
-//             }
-//             case 7:
-//                 sapXepGiamDanTheoDonGia(dsSanPham);
-//                 inDSSP(dsSanPham);
-//                 cout << endl;
-//                 break;
-//             case 8:
-//                 SPCoDonGiaCaoNhat(dsSanPham);
-//                 cout << endl;
-//                 break;
-//             case 9:{
-//                 string maSP;
-//                 cout << "Nhap ma san pham: ";
-//                 cin >> maSP;
-//                 cout << endl;
+        switch(luaChon){
+            case 1:
+                nhapDSSP(dsSanPham);
+                cout << "Nhap danh sach thanh cong!" << endl;
+                break;
+            case 2:
+                inDSSP(dsSanPham);
+                cout << endl;
+                break;
+            case 3:
+                nhapDSHD(dsHoaDon, dsSanPham);
+                cout << "Nhap danh sach thanh cong!" << endl;
+                break;
+            case 4:
+                inDSHD(dsHoaDon);
+                cout << endl;
+                break;
+            case 5: {
+                cout << endl;
+                int subSP;
+                subMenuSP();
+                cout << endl;
+                cout << "Nhap lua chon: ";
+                cin >> subSP;
+                switch(subSP){
+                    case 1:
+                        luuFileSanPham(dsSanPham, "SanPham.txt");
+                        break;
+                    case 2:
+                        docFileSanPham(dsSanPham, "SanPham.txt");
+                        break;
+                    case 0:
+                        break;
+                }
+                cout << endl;
+                break;
+            }
+            case 6: {
+                cout << endl;
+                int subHD;
+                subMenuHD();
+                cout << endl;
+                cout << "Nhap lua chon: ";
+                cin >> subHD;
+                switch(subHD){
+                    case 1:
+                        luuFileHoaDon(dsHoaDon, "HoaDon.txt");
+                        break;
+                    case 2:
+                        docFileHoaDon(dsHoaDon, dsSanPham, "HoaDon.txt");
+                        break;
+                    case 0:
+                        break;
+                }
+                cout << endl;
+                break;
+            }
+            case 7:
+                sapXepGiamDanTheoDonGia(dsSanPham);
+                inDSSP(dsSanPham);
+                cout << endl;
+                break;
+            case 8:
+                SPCoDonGiaCaoNhat(dsSanPham);
+                cout << endl;
+                break;
+            case 9:{
+                string maSP;
+                cout << "Nhap ma san pham: ";
+                cin >> maSP;
+                cout << endl;
 
-//                 timKiemSPTheoMa(dsSanPham, maSP);
-//                 cout << endl;
-//                 break;
-//             }
-//             case 10:{
-//                 long long donGia;
-//                 cout << "Nhap don gia: ";
-//                 cin >> donGia;
-//                 cout << endl;
+                timKiemSPTheoMa(dsSanPham, maSP);
+                cout << endl;
+                break;
+            }
+            case 10:{
+                long long donGia;
+                cout << "Nhap don gia: ";
+                cin >> donGia;
+                cout << endl;
 
-//                 SPCoGiaLonHonX(dsSanPham, donGia);
-//                 cout << endl;
-//                 break;
-//             }
-//             case 11:{
-//                 string maSP;
-//                 cout << "Nhap ma san pham: ";
-//                 cin >> maSP;
-//                 cout << endl;
+                SPCoGiaLonHonX(dsSanPham, donGia);
+                cout << endl;
+                break;
+            }
+            case 11:{
+                string maSP;
+                cout << "Nhap ma san pham: ";
+                cin >> maSP;
+                cout << endl;
 
-//                 chenSauMaSP(dsSanPham, maSP);
-//                 cout << endl;
-//                 break;
-//             }
-//             case 12:{
-//                 string maSP;
-//                 cout << "Nhap ma san pham: ";
-//                 cin >> maSP;
-//                 cout << endl;
+                chenSauMaSP(dsSanPham, maSP);
+                cout << endl;
+                break;
+            }
+            case 12:{
+                string maSP;
+                cout << "Nhap ma san pham: ";
+                cin >> maSP;
+                cout << endl;
 
-//                 xoaSPTheoMa(dsSanPham, maSP);
-//                 cout << endl;
-//                 break;
-//             }
-//             case 13:{
-//                 string maSP;
-//                 cout << "Nhap ma san pham: ";
-//                 cin >> maSP;
-//                 cout << endl;
+                xoaSPTheoMa(dsSanPham, maSP);
+                cout << endl;
+                break;
+            }
+            case 13:{
+                string maSP;
+                cout << "Nhap ma san pham: ";
+                cin >> maSP;
+                cout << endl;
 
-//                 suaTTSP(dsSanPham, maSP);
-//                 cout << endl;
-//                 break;
-//             }
-//             case 14:
-//                 inHDCoNhieuSPNhat(dsHoaDon);
-//                 cout << endl;
-//                 break;
-//             case 15:{
-//                 string maHD;
-//                 cout << "Nhap ma hoa don: ";
-//                 cin >> maHD;
-//                 cout << endl;
+                suaTTSP(dsSanPham, maSP);
+                cout << endl;
+                break;
+            }
+            case 14:
+                inHDCoNhieuSPNhat(dsHoaDon);
+                cout << endl;
+                break;
+            case 15:{
+                string maHD;
+                cout << "Nhap ma hoa don: ";
+                cin >> maHD;
+                cout << endl;
 
-//                 timKiemMaHD(dsHoaDon, maHD);
-//                 cout << endl;
-//                 break;
-//             }
-//             case 16:{
-//                 string maHD;
-//                 cout << "Nhap ma hoa don: ";
-//                 cin >> maHD;
-//                 cout << endl;
+                timKiemMaHD(dsHoaDon, maHD);
+                cout << endl;
+                break;
+            }
+            case 16:{
+                string maHD;
+                cout << "Nhap ma hoa don: ";
+                cin >> maHD;
+                cout << endl;
 
-//                 chenSauMaHD(dsHoaDon, dsSanPham, maHD);
-//                 break;
-//             }
-//             case 17:{
-//                 string maHD;
-//                 cout << "Nhap ma hoa don: ";
-//                 cin >> maHD;
-//                 cout << endl;
+                chenSauMaHD(dsHoaDon, dsSanPham, maHD);
+                break;
+            }
+            case 17:{
+                string maHD;
+                cout << "Nhap ma hoa don: ";
+                cin >> maHD;
+                cout << endl;
 
-//                 xoaHDTheoMa(dsHoaDon, maHD);
-//                 cout << endl;
-//                 break;
-//             }
-//             case 18:{
-//                 string maHD;
-//                 cout << "Nhap ma hoa don: ";
-//                 cin >> maHD;
-//                 cout << endl;
+                xoaHDTheoMa(dsHoaDon, maHD);
+                cout << endl;
+                break;
+            }
+            case 18:{
+                string maHD;
+                cout << "Nhap ma hoa don: ";
+                cin >> maHD;
+                cout << endl;
 
-//                 suaTTHD(dsHoaDon, dsSanPham, maHD);
-//                 cout << endl;
-//                 break;
-//             }
-//             case 19:
-//                 cout << endl;
-//                 thongKeTongDoanhThu(dsHoaDon);
-//                 cout << endl;
-//                 break;
-//             case 20:
-//                 cout << endl;
-//                 thongKeTonKho(dsSanPham);
-//                 cout << endl;
-//                 break;
-//             case 0:
-//                 return 0;
-//             default:
-//                 cout << endl << "LUA CHON KHONG HOP LE! VUI LONG NHAP LAI!" << endl;
-//         }
-//     }
+                suaTTHD(dsHoaDon, dsSanPham, maHD);
+                cout << endl;
+                break;
+            }
+            case 19:
+                cout << endl;
+                thongKeTongDoanhThu(dsHoaDon);
+                cout << endl;
+                break;
+            case 20:
+                cout << endl;
+                thongKeTonKho(dsSanPham);
+                cout << endl;
+                break;
+            case 0:
+                return 0;
+            default:
+                cout << endl << "LUA CHON KHONG HOP LE! VUI LONG NHAP LAI!" << endl;
+        }
+    }
     
-//     xoaBoNho(dsSanPham, dsHoaDon);
-//     return 0;
-// }
+    xoaBoNho(dsSanPham, dsHoaDon);
+    return 0;
+}
 
 
-// struct HoaDon {
-//     string maHD;
-//     string ngayLap;
-//     long long tongTien = 0;
-//     SanPham sanpham;
-//     float giamGia;  // Thuộc tính giảm giá mới
-// };
+struct HoaDon {
+    string maHD;
+    string ngayLap;
+    long long tongTien = 0;
+    SanPham sanpham;
+    float giamGia;  // Thuộc tính giảm giá mới
+};
 
-// // Hàm cập nhật giảm giá cho hóa đơn
-// void capNhatGiamGia(NodeHD* head, string maHD, float giamGiaMoi) {
-//     NodeHD* tmp = head;
-//     while (tmp != NULL) {
-//         if (tmp->hoadon.maHD == maHD) {
-//             // Cập nhật giảm giá cho hóa đơn
-//             tmp->hoadon.giamGia = giamGiaMoi;
-//             // Cập nhật lại tổng tiền sau khi áp dụng giảm giá
-//             tmp->hoadon.tongTien = tmp->hoadon.sanpham.soLuong * tmp->hoadon.sanpham.donGia * (1 - giamGiaMoi);
-//             return;
-//         }
-//         tmp = tmp->next;
-//     }
-//     cout << "Khong tim thay hoa don co ma: " << maHD << endl;
-// }
+// Hàm cập nhật giảm giá cho hóa đơn
+void capNhatGiamGia(NodeHD* head, string maHD, float giamGiaMoi) {
+    NodeHD* tmp = head;
+    while (tmp != NULL) {
+        if (tmp->hoadon.maHD == maHD) {
+            // Cập nhật giảm giá cho hóa đơn
+            tmp->hoadon.giamGia = giamGiaMoi;
+            // Cập nhật lại tổng tiền sau khi áp dụng giảm giá
+            tmp->hoadon.tongTien = tmp->hoadon.sanpham.soLuong * tmp->hoadon.sanpham.donGia * (1 - giamGiaMoi);
+            return;
+        }
+        tmp = tmp->next;
+    }
+    cout << "Khong tim thay hoa don co ma: " << maHD << endl;
+}
 
-// // Hàm in danh sách hóa đơn với giảm giá
-// void inDSHDWithGiamGia(NodeHD* head) {
-//     if (head == NULL) {
-//         cout << "Danh sach rong!" << endl;
-//     } else {
-//         cout << left << setw(15) << "Ma hoa don" << setw(15) << "Ngay lap" << setw(20) << "Ma san pham" << setw(15) << "So luong" << setw(15) << "Tong tien" << setw(15) << "Giam gia" << endl;
-//         while (head != NULL) {
-//             cout << left << setw(15) << head->hoadon.maHD << setw(15) << head->hoadon.ngayLap << setw(20) << head->hoadon.sanpham.maSP << setw(15) << head->hoadon.sanpham.soLuong << setw(15) << head->hoadon.tongTien << setw(15) << head->hoadon.giamGia << endl;
-//             head = head->next;
-//         }
-//     }
-// }
+// Hàm in danh sách hóa đơn với giảm giá
+void inDSHDWithGiamGia(NodeHD* head) {
+    if (head == NULL) {
+        cout << "Danh sach rong!" << endl;
+    } else {
+        cout << left << setw(15) << "Ma hoa don" << setw(15) << "Ngay lap" << setw(20) << "Ma san pham" << setw(15) << "So luong" << setw(15) << "Tong tien" << setw(15) << "Giam gia" << endl;
+        while (head != NULL) {
+            cout << left << setw(15) << head->hoadon.maHD << setw(15) << head->hoadon.ngayLap << setw(20) << head->hoadon.sanpham.maSP << setw(15) << head->hoadon.sanpham.soLuong << setw(15) << head->hoadon.tongTien << setw(15) << head->hoadon.giamGia << endl;
+            head = head->next;
+        }
+    }
+}
